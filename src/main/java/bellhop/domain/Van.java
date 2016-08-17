@@ -31,7 +31,7 @@ public class Van {
     private String imgurl;
     private String name;
 
-    public Van(String description, Make make, String name, String imgurl) {
+    public Van(Make make, String name, String description, String imgurl) {
         this.description = description;
         this.make = make;
         this.name = name;
