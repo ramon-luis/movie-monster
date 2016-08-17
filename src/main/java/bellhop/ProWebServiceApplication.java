@@ -14,11 +14,13 @@ import java.util.Arrays;
 @SpringBootApplication
 public class ProWebServiceApplication implements CommandLineRunner {
 
+    @Autowired
+    private MakeRepository mMakeRepository;
+
 	@Autowired
 	private VanRepository mVanRepository;
 
-    @Autowired
-    private MakeRepository mMakeRepository;
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProWebServiceApplication.class, args);
@@ -39,11 +41,10 @@ public class ProWebServiceApplication implements CommandLineRunner {
         vans[0] = new Van(makes[0], "name1", "desc", "image");
         vans[1] = new Van(makes[0], "name1", "desc", "image");
         vans[2] = new Van(makes[1], "name1", "desc", "image");
-        vans[4] = new Van(makes[1], "name1", "desc", "image");
+        vans[3] = new Van(makes[1], "name1", "desc", "image");
         vans[4] = new Van(makes[2], "name1", "desc", "image");
 
         mVanRepository.save(Arrays.asList(vans));
-
 
     }
 

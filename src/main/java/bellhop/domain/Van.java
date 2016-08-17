@@ -22,8 +22,6 @@ public class Van {
     @ManyToOne
     private Make make;
 
-
-
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
@@ -32,9 +30,9 @@ public class Van {
     private String name;
 
     public Van(Make make, String name, String description, String imgurl) {
-        this.description = description;
         this.make = make;
         this.name = name;
+        this.description = description;
         this.imgurl = imgurl;
         createTime = new Date();
     }
