@@ -1,12 +1,14 @@
 package bellhop.service;
 
 import bellhop.domain.Van;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Iterator;
 
 /**
  * Created by RAM0N on 8/16/16.
  */
+
 public interface VanService {
 
     // list

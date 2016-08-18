@@ -3,10 +3,12 @@ package bellhop.service;
 import bellhop.domain.Van;
 import bellhop.repository.VanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by RAM0N on 8/16/16.
  */
+@Service
 public class VanServiceImpl implements VanService {
 
     private VanRepository mVanRepository;
