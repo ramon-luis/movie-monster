@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <th:block th:include="fragments/header :: header"/>
+        <div th:if="${not #lists.isEmpty(shows)}">
+            <h2> Show List</h2>
+            <table class="table table-striped">
+                <tr>
+                    <!--table headers-->
+
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>MediaType</th>
+                    <th>RT</th>
+                    <th>MetaCritic</th>
+                    <th>Genre</th>
+                    <th>Description</th>
+                    <th>RunningTime</th>
+                </tr>
+                <!--table rows-->
+                <tr th:each="show : ${shows}">
+
+                    <td th:text="${show.name}"></td>
+                    <td> <img th:src="${show.imageUrl}" class="img-responsive"/></td>
+                    <td th:text="${show.mediaType.name}"></td>
+                    <td th:text="${show.rottenTomatoesRating}"></td>
+                    <td th:text="${show.metaCriticRating}"></td>
+                    <td th:text="${show.genre.name}"></td>
+                    <td th:text="${show.description}"></td>
+                    <td th:text="${show.runningTime}"></td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>

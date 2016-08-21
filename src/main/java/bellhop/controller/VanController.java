@@ -1,7 +1,7 @@
 package bellhop.controller;
 
-import bellhop.domain.Van;
-import bellhop.service.VanService;
+import bellhop.domain.Show;
+import bellhop.service.ShowService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class VanController {
 
-    private VanService mVanService;
+    private ShowService mShowService;
 
     @Autowired
-    public VanController(VanService vanService) {
-        mVanService = vanService;
+    public VanController(ShowService showService) {
+        mShowService = showService;
     }
 
     // list + CRUD
@@ -29,32 +29,32 @@ public class VanController {
     // list : get
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String list(Model model) {
-        model.addAttribute("vans", mVanService.list());
-        return "vanlist"; // vanlist.html page
+        model.addAttribute("shows", mShowService.list());
+        return "showslist"; // showslist.html page
     }
 
     // create : post
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public Van create(@RequestBody Van van) {
-        return mVanService.create(van);
+    public Show create(@RequestBody Show show) {
+        return mShowService.create(show);
     }
 
     // read : get
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Van read(@PathVariable(value = "id") long id) {
-        return mVanService.read(id);
+    @RequestMapping(value = "/{mId}", method = RequestMethod.GET)
+    public Show read(@PathVariable(value = "mId") long id) {
+        return mShowService.read(id);
     }
 
     // update : put
-    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public Van update(@PathVariable(value = "id") long id, @RequestBody Van van) {
-        return mVanService.update(id, van);
+    @RequestMapping(value = "/{mId}", method = RequestMethod.PUT)
+    public Show update(@PathVariable(value = "mId") long id, @RequestBody Show show) {
+        return mShowService.update(id, show);
     }
 
     // delete : delete
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void delete(@PathVariable(value = "id") long id) {
-        mVanService.delete(id);
+    @RequestMapping(value = "/{mId}", method = RequestMethod.DELETE)
+    public void delete(@PathVariable(value = "mId") long id) {
+        mShowService.delete(id);
     }
 
 

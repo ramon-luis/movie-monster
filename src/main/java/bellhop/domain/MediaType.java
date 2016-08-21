@@ -9,41 +9,38 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Make {
+public class MediaType {
 
     @Id
     @GeneratedValue
-    private Long id;
-    private String name;
+    private Long mId;
 
-    public Make(String name) {
-        this.name = name;
+    private String mName;
+
+    public MediaType(String name) {
+        mName = name;
     }
 
-    public Make() {
+    public MediaType() {
     }
 
     public String getName() {
-        return name;
+        return mName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        mName = name;
     }
 
     public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+        return mId;
     }
 
     @Override
     public String toString() {
-        return "Make{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+        return "MediaType{" +
+                "Id=" + mId +
+                ", Name='" + mName + '\'' +
                 '}';
     }
 }
