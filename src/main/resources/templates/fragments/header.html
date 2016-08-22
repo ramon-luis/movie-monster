@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
+<head th:include="fragments/headerinc"></head>
 
 <body>
-    <div class="container">
-        <div th:fragment="header">
-            <div class="jumbotron">
-                <div class="row text-center">
-                    <div class="">
-                        <h2>Shows To Watch</h2>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <img th:src="@{http://static.tumblr.com/ovituqy/mDVm4sspq/documentary-filmheader.jpg}" width="600"/>
+<div class="container">
+    <div th:fragment="header">
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="">
+                    <h2>Shows To Watch</h2>
                 </div>
             </div>
-
+            <div class="row text-center">
+                <img th:src="@{http://static.tumblr.com/ovituqy/mDVm4sspq/documentary-filmheader.jpg}" width="600"/>
+            </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>

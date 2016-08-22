@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 
 @Controller
-public class VanController {
+public class ShowController {
 
     private ShowService mShowService;
 
     @Autowired
-    public VanController(ShowService showService) {
+    public ShowController(ShowService showService) {
         mShowService = showService;
     }
 
