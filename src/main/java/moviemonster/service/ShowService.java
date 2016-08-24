@@ -1,6 +1,6 @@
-package bellhop.service;
+package moviemonster.service;
 
-import bellhop.domain.Show;
+import moviemonster.domain.Show;
 
 /**
  * Created by RAM0N on 8/16/16.

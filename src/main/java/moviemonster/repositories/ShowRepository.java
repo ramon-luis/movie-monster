@@ -1,6 +1,6 @@
-package bellhop.repository;
+package moviemonster.repositories;
 
-import bellhop.domain.Show;
+import moviemonster.domain.Show;
 import org.springframework.data.repository.CrudRepository;
 
 /**

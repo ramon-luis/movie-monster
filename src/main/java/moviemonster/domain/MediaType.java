@@ -1,4 +1,4 @@
-package bellhop.domain;
+package moviemonster.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,34 +13,34 @@ public class MediaType {
 
     @Id
     @GeneratedValue
-    private Long mId;
+    private Long id;
 
-    private String mName;
+    private String name;
 
     public MediaType(String name) {
-        mName = name;
+        this.name = name;
     }
 
     public MediaType() {
     }
 
     public String getName() {
-        return mName;
+        return name;
     }
 
     public void setName(String name) {
-        mName = name;
+        this.name = name;
     }
 
     public Long getId() {
-        return mId;
+        return id;
     }
 
     @Override
     public String toString() {
         return "MediaType{" +
-                "Id=" + mId +
-                ", Name='" + mName + '\'' +
+                "Id=" + id +
+                ", Name='" + name + '\'' +
                 '}';
     }
 }

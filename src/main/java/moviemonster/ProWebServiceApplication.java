@@ -1,11 +1,11 @@
-package bellhop;
+package moviemonster;
 
-import bellhop.domain.Genre;
-import bellhop.domain.MediaType;
-import bellhop.domain.Show;
-import bellhop.repository.GenreRepository;
-import bellhop.repository.MediaTypeRepository;
-import bellhop.repository.ShowRepository;
+import moviemonster.domain.Genre;
+import moviemonster.domain.MediaType;
+import moviemonster.domain.Show;
+import moviemonster.repositories.GenreRepository;
+import moviemonster.repositories.MediaTypeRepository;
+import moviemonster.repositories.ShowRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,13 +17,13 @@ import java.util.Arrays;
 public class ProWebServiceApplication implements CommandLineRunner {
 
     @Autowired
-    private GenreRepository mGenreRepository;
+    private GenreRepository genreRepository;
 
 	@Autowired
-	private ShowRepository mShowRepository;
+	private ShowRepository showRepository;
 
     @Autowired
-    private MediaTypeRepository mMediaTypeRepository;
+    private MediaTypeRepository mediaRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProWebServiceApplication.class, args);
@@ -37,7 +37,7 @@ public class ProWebServiceApplication implements CommandLineRunner {
         mediaTypes[0] = new MediaType("TV");
         mediaTypes[1] = new MediaType("Movie");
 
-        mMediaTypeRepository.save(Arrays.asList(mediaTypes));
+        mediaRepository.save(Arrays.asList(mediaTypes));
 
         // create genres
         Genre[] genres = new Genre[6];
@@ -48,7 +48,7 @@ public class ProWebServiceApplication implements CommandLineRunner {
         genres[4] = new Genre("Sci-Fi");
         genres[5] = new Genre("Foreign");
 
-        mGenreRepository.save(Arrays.asList(genres));
+        genreRepository.save(Arrays.asList(genres));
 
         // create shows
         Show[] shows = new Show[10];
@@ -63,7 +63,7 @@ public class ProWebServiceApplication implements CommandLineRunner {
         shows[8] = getShow8(mediaTypes, genres);
         shows[9] = getShow9(mediaTypes, genres);
 
-        mShowRepository.save(Arrays.asList(shows));
+        showRepository.save(Arrays.asList(shows));
 
     }
 

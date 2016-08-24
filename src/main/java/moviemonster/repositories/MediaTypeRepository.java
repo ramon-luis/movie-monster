@@ -1,6 +1,6 @@
-package bellhop.repository;
+package moviemonster.repositories;
 
-import bellhop.domain.MediaType;
+import moviemonster.domain.MediaType;
 import org.springframework.data.repository.CrudRepository;
 
 /**

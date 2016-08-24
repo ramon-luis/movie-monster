@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
-<head th:include="fragments/headerinc"></head>
-
+<head lang="en">
+</head>
 <body>
+
 <div class="container">
     <div th:fragment="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" th:href="@{/shows}">Movies</a></li>
+                        <li><a href="#" th:href="@{/show/new}">Add Movie</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
         <div class="jumbotron">
             <div class="row text-center">
                 <div class="">
-                    <h2>Shows To Watch</h2>
+                    <h2>Movie Monster</h2>
+                    <h3>Find your next movie to devour!</h3>
                 </div>
             </div>
             <div class="row text-center">
-                <img th:src="@{http://static.tumblr.com/ovituqy/mDVm4sspq/documentary-filmheader.jpg}" width="600"/>
+                <img th:src="@{http://static.tumblr.com/ovituqy/mDVm4sspq/documentary-filmheader.jpg}"/>
             </div>
         </div>
     </div>
 </div>
 </body>
-
 </html>

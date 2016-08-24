@@ -1,7 +1,7 @@
-package bellhop.service;
+package moviemonster.service;
 
-import bellhop.domain.Show;
-import bellhop.repository.ShowRepository;
+import moviemonster.domain.Show;
+import moviemonster.repositories.ShowRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -42,7 +42,7 @@ public class ShowServiceImpl implements ShowService {
         showToUpdate.setMediaType(show.getMediaType());
         showToUpdate.setName(show.getName());
         showToUpdate.setDescription(show.getDescription());
-        showToUpdate.setImageUrl(show.getImageUrl());
+        showToUpdate.setImageURL(show.getImageURL());
 
         return mShowRepository.save(showToUpdate);
     }

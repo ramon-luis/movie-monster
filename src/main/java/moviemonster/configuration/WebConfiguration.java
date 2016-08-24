@@ -1,9 +1,4 @@
-package bellhop.configuration;
-
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+package moviemonster.configuration;
 
 /**
  * Created by RAM0N on 8/21/16.
