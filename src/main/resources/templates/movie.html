@@ -6,13 +6,13 @@
 <body>
 <div class="container-fluid">
     <th:block th:include="fragments/header :: header"></th:block>
-
-    <h2>Movie Details</h2>
     <div class="container-fluid">
+        <h2> </h2>
         <form>
-            <div class="col-sm-12">
+            <div class="col-sm-6">
                 <img th:src="${movie.imageURL}" class="img-responsive" width="200"/>
             </div>
+            <div class="col-sm-6">
             <div class="form-group">
                 <label class="col-sm-6 control-label">Name:</label>
                 <div class="col-sm-6">
@@ -42,6 +42,7 @@
                 <div class="col-sm-6">
                     <p class="form-control-static" th:text="${movie.description}"></p>
                 </div>
+            </div>
             </div>
         </form>
     </div>
