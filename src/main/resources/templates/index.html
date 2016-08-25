@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head lang="en">
-        <th:block th:include="fragments/headerinc :: head"></th:block>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <th:block th:include="fragments/header :: header"></th:block>
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <h2>Let Movie Monster help you decide what to watch!</h2>
-                </div>
-                <div class="row text-center">
-                    <img class="img-responsive center-block" th:src="@{https://i.ytimg.com/vi/KQtQ20w9DzY/hqdefault.jpg}" />
-                </div>
-            </div>
+<head lang="en">
+    <th:block th:include="fragments/headerinc :: head"></th:block>
+</head>
+<body>
+<div class="container-fluid">
+    <th:block th:include="fragments/header :: header"></th:block>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <h2>Let Movie Monster help you decide what to watch!</h2>
         </div>
-    </body>
+        <div class="row text-center">
+            <img class="img-responsive center-block" th:src="@{https://i.ytimg.com/vi/KQtQ20w9DzY/hqdefault.jpg}" />
+        </div>
+    </div>
+</div>
+</body>
 </html>
