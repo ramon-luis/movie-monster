@@ -5,11 +5,11 @@
 <body>
 <div class="container-fluid">
     <div th:fragment="header">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
-                    <ul class="nav navbar-nav">
+\                    <ul class="nav navbar-nav">
+                        <li><a href="#" th:href="@{/}">Home</a></li>
                         <li><a href="#" th:href="@{/movies}">Movies</a></li>
                         <li><a href="#" th:href="@{/movie/new}">Add New Movie</a></li>
                     </ul>

@@ -23,7 +23,7 @@ public class HtmlController {
     }
 
     // index
-    @RequestMapping("/")
+    @RequestMapping(value= {"/", "/index"})
     String index(){
         return "index";
     }
