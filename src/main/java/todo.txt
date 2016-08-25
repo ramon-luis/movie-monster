@@ -1,12 +1,7 @@
 TODO
 
-reduce # of fields
-remove movie type - limit to movies only
-update movie service impl
-update forms to movie correct fields
 update forms to contain 0-100 for rating (integer values)
 
-API
 formatting
 background color
 image at top

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by RAM0N on 8/16/16.
+ * Implementation of a MovieService.
  */
 @Service
 public class MovieServiceImpl implements MovieService {

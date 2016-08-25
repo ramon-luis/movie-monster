@@ -3,12 +3,11 @@ package moviemonster.controller;
 import moviemonster.domain.Movie;
 import moviemonster.services.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Created by RAM0N on 8/24/16.
+ * Controller for API requests (JSON).
+ * Note @RestController annotation and @RequestMapping for entire controller at "/api".
  */
 
 @RestController

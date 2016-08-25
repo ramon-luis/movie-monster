@@ -10,6 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Arrays;
 
+/**
+ * Main method to call the application.
+ * Run method is used to create example Genre and Movie objects to populate the database.
+ */
+
 @SpringBootApplication
 public class ProWebServiceApplication implements CommandLineRunner {
 

@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * Created by RAM0N on 8/16/16.
+ * Genre object has a single member (String name) with a many-to-one relationship with Movies.
  */
 
 @Entity

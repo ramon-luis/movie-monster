@@ -3,7 +3,8 @@ package moviemonster.services;
 import moviemonster.domain.Movie;
 
 /**
- * Created by RAM0N on 8/16/16.
+ * Defines required methods for a MovieService.  Note that update() is not explicitly needed: Spring annotations
+ * allow Create() to be used for both create and update.
  */
 
 public interface MovieService {
@@ -11,8 +12,8 @@ public interface MovieService {
     // list
     Iterable<Movie> list();
 
-    // CRUD less update -> update not explicitly needed
-    Movie create(Movie movie);
+    // CRUD
+    Movie create(Movie movie);  // handles both create and update via id/version
     Movie read(Long id);
     void delete(long id);
 

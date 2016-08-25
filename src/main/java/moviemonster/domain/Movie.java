@@ -3,7 +3,9 @@ package moviemonster.domain;
 import javax.persistence.*;
 
 /**
- * Created by RAM0N on 8/16/16.
+ * Movie object contains useful information about movies.  One attribute of Movie is Genre: there is one genre per
+ * movie, but each genre can have many movies.  Note that the @ManyToOne annotation sets the cascade property so that
+ * a genre will be automatically created/updated if necessary when a Movie is created/updated.
  */
 
 @Entity

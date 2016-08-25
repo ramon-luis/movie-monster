@@ -10,17 +10,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * Created by RAM0N on 8/16/16.
+ * Controller for HTML requests.
+ * Basic @Controller annotation where methods return String references to HTML templates.
  */
 
 @Controller
-public class MovieController {
+public class HtmlController {
 
     private MovieService movieService;
 
     @Autowired
-    public MovieController(MovieService movieService) {
+    public HtmlController(MovieService movieService) {
         this.movieService = movieService;
+    }
+
+    // index
+    @RequestMapping("/")
+    String index(){
+        return "index";
     }
 
     // list all
@@ -38,21 +45,21 @@ public class MovieController {
         return "movie";
     }
 
-    // update
+    // update: view form
     @RequestMapping(value = "movie/update/{id}")
     public String update(@PathVariable long id, Model model) {
         model.addAttribute("movie", movieService.read(id));
         return "movieform";
     }
 
-    // new
+    // new: view form
     @RequestMapping(value = "movie/new")
     public String newMovie(Model model) {
         model.addAttribute("movie", new Movie());
         return "movieform";
     }
 
-    // create
+    // create & update: process post request
     @RequestMapping(value= "movie", method = RequestMethod.POST)
     public String createMovie(Movie movie) {
         System.out.println(movie);
