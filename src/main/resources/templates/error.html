@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <th:block th:include="fragments/headerinc :: head"></th:block>
+</head>
+<body>
+<div class="container-fluid">
+    <th:block th:include="fragments/header :: header"></th:block>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <h2>Uh-oh.... looks like we don't have a page for that request...</h2>
+        </div>
+        <div class="row text-center">
+            <img class="img-responsive center-block" th:src="@{http://i.giphy.com/P9zczyvoank08.gif}" />
+        </div>
+    </div>
+</div>
+</body>
+</html>
