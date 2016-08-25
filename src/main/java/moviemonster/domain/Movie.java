@@ -21,6 +21,7 @@ public class Movie {
     @Column(columnDefinition = "TEXT")
     private String description;
 
+    // http://stackoverflow.com/questions/2302802/object-references-an-unsaved-transient-instance-save-the-transient-instance-be/2302814
     @ManyToOne(cascade = CascadeType.ALL) // no need to have seperate repo, service, etc for Genre with Cascade.ALL
     private Genre genre;
 
@@ -108,8 +109,9 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Show{" +
+        return "Movie{" +
                 "id=" + id +
+                "version=" + version +
                 ", Name='" + name + '\'' +
                 ", Description='" + description + '\'' +
                 ", Genre=" + genre +

@@ -34,6 +34,7 @@ public class MovieController {
     @RequestMapping(value = "movie/{id}")
     public String viewMovie(@PathVariable long id, Model model) {
         model.addAttribute("movie", movieService.read(id));
+        System.out.println(movieService.read(id));
         return "movie";
     }
 
@@ -54,6 +55,7 @@ public class MovieController {
     // create
     @RequestMapping(value= "movie", method = RequestMethod.POST)
     public String createMovie(Movie movie) {
+        System.out.println(movie);
         movieService.create(movie);
         return "redirect:/movie/" + movie.getId();
     }
