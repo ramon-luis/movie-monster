@@ -1,9 +1,9 @@
 TODO
 
 reduce # of fields
-remove show type - limit to movies only
-update show service impl
-update forms to show correct fields
+remove movie type - limit to movies only
+update movie service impl
+update forms to movie correct fields
 update forms to contain 0-100 for rating (integer values)
 
 API

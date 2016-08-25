@@ -1,11 +1,10 @@
 package moviemonster.repositories;
 
-import moviemonster.domain.Genre;
+import moviemonster.domain.Movie;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  * Created by RAM0N on 8/16/16.
  */
-public interface GenreRepository extends CrudRepository<Genre, Long> {
-
+public interface MovieRepository extends CrudRepository<Movie, Long> {
 }

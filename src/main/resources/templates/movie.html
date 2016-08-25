@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+
+    <h2>Movie Details</h2>
+    <div class="container-fluid">
+        <form>
+            <div class="col-sm-12">
+                <img th:src="${movie.imageURL}" class="img-responsive" width="200"/>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-6 control-label">Name:</label>
+                <div class="col-sm-6">
+                    <p class="form-control-static" th:text="${movie.name}"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-6 control-label">Genre:</label>
+                <div class="col-sm-6">
+                    <p class="form-control-static" th:text="${movie.genre.name}"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-6 control-label">Rotten Tomatoes Rating:</label>
+                <div class="col-sm-6">
+                    <p class="form-control-static" th:text="${movie.rtRating}"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-6 control-label">MetaCritic Rating:</label>
+                <div class="col-sm-6">
+                    <p class="form-control-static" th:text="${movie.mcRating}"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-6 control-label">Description:</label>
+                <div class="col-sm-6">
+                    <p class="form-control-static" th:text="${movie.description}"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

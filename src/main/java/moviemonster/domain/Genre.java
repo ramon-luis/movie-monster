@@ -17,11 +17,10 @@ public class Genre {
 
     private String name;
 
+    public Genre(){}
+
     public Genre(String name) {
         this.name = name;
-    }
-
-    public Genre() {
     }
 
     public String getName() {
@@ -34,6 +33,10 @@ public class Genre {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id  = id;
     }
 
     @Override
