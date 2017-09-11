@@ -1,13 +1,13 @@
 # Movie Monster
 
-Movie Monster is a web application that allows users to store information about movies, such as: title, genre, description, movie poster (image), Rotten Tomato tating, and MetaCritic Rating. The application can handle CRUD operations via both HTML and JSON.  
+Movie Monster is a web application that allows users to store information about movies, such as: title, genre, description, movie poster (image), Rotten Tomato rating, and MetaCritic rating. The application can handle CRUD operations via both HTML and JSON.  
 
 ## What's Here  
 * `src/main/java/moviemonster/services/` - CRUD operations  
 * `src/main/java/moviemonster/domain/` - Movie and Genre object definitions  
 * `src/main/java/moviemonster/repositories/` - interface to create CRUD repo for Movie objects  
 * `src/main/java/moviemonster/controller/` - HTML controller and API controller (JSON requests)  
-* `src/main/java/moviemonster/ProWebServiceApplication.java` - Main method and Run method (to populate db with sample data)  
+* `src/main/java/moviemonster/ProWebServiceApplication.java` - Main method and Run method (to populate application database with sample data)  
 * `src/main/resources` - HTML and CSS files
 
 
