@@ -20,6 +20,8 @@ Movie Monster is a web application that allows users to store information about 
 <kbd>
 	<img src="https://github.com/ramon-luis/movie-monster/raw/master/demo/movie-monster-screenshot-4.png">
 </kbd>
+<br />
+<br />
 
 ## What's Here  
 * `src/main/java/moviemonster/services/` - CRUD operations  
