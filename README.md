@@ -2,6 +2,25 @@
 
 Movie Monster is a web application that allows users to store information about movies, such as: title, genre, description, movie poster (image), Rotten Tomato rating, and MetaCritic rating. The application can handle CRUD operations via both HTML and JSON.  
 
+<kbd>
+	<img src="https://github.com/ramon-luis/movie-monster/raw/master/demo/movie-monster-screenshot-1.png">
+</kbd>
+<br />
+<br />
+<kbd>
+	<img src="https://github.com/ramon-luis/movie-monster/raw/master/demo/movie-monster-screenshot-2.png">
+</kbd>
+<br />
+<br />
+<kbd>
+	<img src="https://github.com/ramon-luis/movie-monster/raw/master/demo/movie-monster-screenshot-3.png">
+</kbd>
+<br />
+<br />
+<kbd>
+	<img src="https://github.com/ramon-luis/movie-monster/raw/master/demo/movie-monster-screenshot-4.png">
+</kbd>
+
 ## What's Here  
 * `src/main/java/moviemonster/services/` - CRUD operations  
 * `src/main/java/moviemonster/domain/` - Movie and Genre object definitions  
